@@ -27,8 +27,9 @@ public class RegistrazioneController {
 
 
     @FXML
-    protected void effettuaRegistrazione(){
-        Utente u = new Utente(user.getText(), psw.getText());
-
+    protected void RegistrazioneClick() {
+        Accessi.accessi.add(new Utente(user.getText(),psw.getText()));
+        Stage stage = (Stage) user.getScene().getWindow();
+        stage.close();
     }
 }

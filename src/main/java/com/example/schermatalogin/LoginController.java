@@ -61,19 +61,17 @@ public class LoginController {
      *cambia alla scehrmatadi registrazione
      */
     @FXML
-    protected void registrati () throws IOException{
+    protected void registrati () throws IOException {
         try {
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("registrazione.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Registrazione.fxml"));
             Parent root1 = fxmlLoader.load();
             Stage stage = new Stage();
             stage.initModality(Modality.APPLICATION_MODAL);
-            stage.setTitle("registrazione");
+            stage.setTitle("Registrati");
             stage.setScene(new Scene(root1));
             stage.show();
-        }
-        catch (IOException e) {
+        } catch (IOException e) {
             throw new RuntimeException(e);
         }
     }
-
 }
