@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="358.0" prefWidth="271.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Label fx:id="control" alignment="CENTER" text="controllo" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="235.0">
+         <children>
+            <Label text="User">
+               <padding>
+                  <Insets right="15.0" />
+               </padding></Label>
+            <TextField fx:id="user" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Label text="Password">
+               <padding>
+                  <Insets right="15.0" />
+               </padding></Label>
+            <TextField fx:id="psw" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="10.0" layoutY="110.0" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Label text="email">
+               <padding>
+                  <Insets right="15.0" />
+               </padding>
+            </Label>
+            <TextField fx:id="email" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Button alignment="CENTER" mnemonicParsing="false" onAction="#effettuaRegistrazione" text="completa registrazione" />
+         </children>
+      </HBox>
+   </children>
+</VBox>
